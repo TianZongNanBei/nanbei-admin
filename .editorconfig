@@ -1,0 +1,26 @@
+# 声明这是根配置文件，阻止向上级目录搜索其他 .editorconfig 文件
+root = true
+
+# 以下规则适用于所有文件
+[*]
+# 强制使用 Unix 风格的换行符（LF）
+end_of_line = lf
+
+# 文件编码强制为 UTF-8（避免乱码）
+charset = utf-8
+
+# 缩进使用空格（替代制表符 tab）
+indent_style = space
+
+# 每次缩进 2 个空格（前端通用标准，可改为 4 如 Java 项目）
+indent_size = 2
+
+# 自动删除行尾多余空格（保持代码整洁）
+trim_trailing_whitespace = true
+
+# 文件末尾自动插入空行（保证兼容性，符合 POSIX 标准）
+insert_final_newline = true
+
+# 对 Markdown 文件使用 4 空格缩进（兼容列表嵌套）
+[*.md]
+indent_size = 4
